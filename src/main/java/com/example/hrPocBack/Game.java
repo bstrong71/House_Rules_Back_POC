@@ -22,6 +22,9 @@ public class Game {
     @Column
     private String original_rules;
 
+    @Column
+    private String alternate_rules;
+
     public Game() {
     }
 
@@ -65,6 +68,14 @@ public class Game {
         this.original_rules = original_rules;
     }
 
+    public String getAlternate_rules() {
+        return alternate_rules;
+    }
+
+    public void setAlternate_rules(String alternate_rules) {
+        this.alternate_rules = alternate_rules;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -88,6 +99,7 @@ public class Game {
                 ", category='" + category + '\'' +
                 ", objective='" + objective + '\'' +
                 ", original_rules='" + original_rules + '\'' +
+                ", alternate_rules='" + alternate_rules + '\'' +
                 '}';
     }
 }
