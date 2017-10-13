@@ -7,7 +7,7 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
-
+@CrossOrigin(origins = "https://dry-forest-51238.herokuapp.com")
 @RestController
 public class MainController {
 
