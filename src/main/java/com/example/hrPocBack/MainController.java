@@ -26,8 +26,8 @@ public class MainController {
         return "Ok";
     }
 
-    @GetMapping(path = "/api/game")
-    public Game findOneGame(@RequestParam int id) {
+    @GetMapping(path = "/api/game/{id}")
+    public Game findOneGame(@PathVariable("id") int id) {
         Game game = games.findOne(id);
         System.out.println(game);
         return game;
