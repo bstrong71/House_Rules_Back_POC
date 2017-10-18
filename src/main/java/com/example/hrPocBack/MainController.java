@@ -38,4 +38,9 @@ public class MainController {
         System.out.println("Successful get to endpoint");
         return gameList;
     }
+
+    @DeleteMapping(path = "/api/game/{id}/delete")
+    public void deleteGame(@PathVariable("id") int id) {
+        games.delete(id);
+    }
 }
